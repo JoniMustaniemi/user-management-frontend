@@ -1,0 +1,74 @@
+.toggleSwitch {
+  position: relative;
+  top: 150px;
+  left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+  width: fit-content;
+}
+
+.label {
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+.toggleSwitch input {
+  display: none;
+}
+
+.slider {
+  width: 42px;
+  height: 22px;
+  background: rgb(76, 175, 80);
+
+  border-radius: 20px;
+  position: relative;
+  transition: background 0.3s ease-in-out;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+input:checked + .slider {
+  background: rgb(160, 69, 69);
+}
+
+input:checked + .slider::before {
+  right: 22px;
+  background: #fff;
+  transform: scale(1.1) translateY(-50%);
+}
+
+.slider:hover {
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.toggleSwitch.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toggleSwitch.disabled .slider {
+  background: gray;
+}
+
+.toggleSwitch.disabled input:checked + .slider {
+  background: darkgray;
+}

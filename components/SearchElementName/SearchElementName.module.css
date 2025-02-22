@@ -1,0 +1,40 @@
+.searchContainer {
+  position: relative;
+  top: 80px;
+  left: 20px;
+  width: 250px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.searchInput:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.loading {
+  position: absolute;
+  font-size: 14px;
+  color: #555;
+  text-align: center;
+}
+
+.error {
+  position: absolute;
+  font-size: 14px;
+  color: red;
+  text-align: center;
+}
+
+.noUser {
+  position: absolute;
+  color: orangeRed;
+}

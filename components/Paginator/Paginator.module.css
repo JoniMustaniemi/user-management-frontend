@@ -1,0 +1,51 @@
+.pagination {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.pagination button {
+  padding: 8px 20px;
+  font-size: 20px;
+  background-color: rgb(9, 96, 130);
+  color: #f0f0f0;
+  border: 1px solid #555;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pagination button:hover {
+  background-color: rgb(12, 121, 165);
+  transform: scale(1.1);
+}
+
+.pagination i {
+  font-size: 28px;
+}
+
+.pagination button:hover i {
+  color: #ddd;
+}
+
+.pagination span {
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.pageIndicator {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.pageValue {
+  color: white;
+  font-weight: bold;
+}
