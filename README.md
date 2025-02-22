@@ -15,7 +15,7 @@ cp .env.example .env.local
 ```
 ### 4. Open .env.local and set the API URL:
 ```bash
-NEXT_PUBLIC_API_BASE_URL=<API_URL_>
+NEXT_PUBLIC_API_BASE_URL=<API_URL>
 ```
 
 ## Running the Development Server
